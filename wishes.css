@@ -39,22 +39,24 @@ body {
   }
   
   #wish2 {
-    animation-delay: 2s;
-  }
-  
-  #wish3 {
     animation-delay: 3s;
   }
   
+  #wish3 {
+    animation-delay: 5s;
+  }
+  
   #wish4 {
-    animation-delay: 4s;
+    animation-delay: 7s;
+   
   }
   
   #wish5 {
-    animation-delay: 5s;
+    animation-delay: 9s;
   }
   #wish6 {
-    animation-delay: 6s;
+    animation-delay: 11s;
   }
+  
   
   
