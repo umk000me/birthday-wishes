@@ -4,7 +4,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #b784db; /* Background color */
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     flex-direction: column; /* Stack elements vertically */
@@ -18,6 +20,8 @@ body {
     font-size: 3rem;
     margin-bottom: 30px; /* Add some space below the text */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-top: 370px;
+    margin-left: 50px;
   }
   
   /* Envelope Container */
@@ -126,13 +130,14 @@ body {
   .text {
     text-align: center;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Courier New", Courier, monospace;
+
     margin-top: 20px;
     font-weight: bold;
     color: black;
     position: relative;
     top: -20px;
-    left: 20px;
+    
   }
   
   /* Heart Animation */
@@ -181,8 +186,15 @@ body {
     }
   }
   .btn{
- margin-left: 80px;
+ margin-left: 60px;
     background-color:palevioletred;
     display: flex;
     border-radius: 20px;
+    font-size: medium;
+    margin-top: -30px;
   }
+  .hd{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+  }
+ 
