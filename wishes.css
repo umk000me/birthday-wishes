@@ -1,0 +1,60 @@
+/* Birthday Wishes Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9c8d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .birthday-container {
+    text-align: center;
+    font-size: 24px;
+    color: #4a3c77;
+  }
+  
+  .wish {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    margin: 10px 0;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add Delay to Each Wish */
+  #wish1 {
+    animation-delay: 1s;
+  }
+  
+  #wish2 {
+    animation-delay: 2s;
+  }
+  
+  #wish3 {
+    animation-delay: 3s;
+  }
+  
+  #wish4 {
+    animation-delay: 4s;
+  }
+  
+  #wish5 {
+    animation-delay: 5s;
+  }
+  #wish6 {
+    animation-delay: 6s;
+  }
+  
+  

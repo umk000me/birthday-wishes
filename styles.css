@@ -1,0 +1,188 @@
+/* General Page Style */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #b784db; /* Background color */
+    margin: 0;
+    padding: 0;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center the content */
+  }
+  
+  /* "Happy Birthday" Text Styling */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff4d98; /* Pink color for the text */
+    font-size: 3rem;
+    margin-bottom: 30px; /* Add some space below the text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  }
+  
+  /* Envelope Container */
+  .envelope {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Envelope Back Side */
+  .back {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background: #6247aa; /* Envelope color */
+    border-radius: 10px;
+  }
+  
+  /* Envelope Front Lid */
+  .front {
+    position: absolute;
+    border-right: 130px solid #815ac0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 120px;
+    z-index: 3;
+  }
+  
+  .front:before {
+    content: "";
+    position: absolute;
+    border-left: 130px solid #815ac0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: -100px;
+    left: -120px;
+  }
+  
+  .front:after {
+    content: "";
+    position: absolute;
+    border-bottom: 105px solid #7251b5;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -120px;
+  }
+  
+  /* Envelope Top Flap */
+  .top {
+    position: absolute;
+    border-top: 105px solid #9163cb;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: 0.4s;
+  }
+  
+  /* Envelope Hover Animation */
+  .envelope:hover .top {
+    transform: rotateX(160deg); /* Lid flips up */
+  }
+  
+  /* Letter Animation */
+  .letter {
+    position: absolute;
+    background: white;
+    width: 230px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transition: 0.2s;
+    z-index: 1;
+    opacity: 0; /* Initially hidden */
+  }
+  
+  /* Hover Effect to Reveal the Letter */
+  .envelope:hover .letter {
+    transform: translateY(-100px); /* Moves the letter upwards */
+    opacity: 1; /* Makes the letter visible */
+    z-index: 2;
+  }
+  
+  /* Text Inside the Letter */
+  .text1 {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    top: -50%;
+  }
+  
+  /* Inner Text of the Envelope */
+  .text {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+  
+  /* Heart Animation */
+  .heart {
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: untoldcoding 0.8s linear infinite;
+  }
+  
+  /* Corrected Heart Shape */
+  .heart:before, .heart:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+  }
+  
+  .heart:before {
+    top: -35px;
+    left: 0;
+  }
+  
+  .heart:after {
+    top: 0;
+    left: 35px;
+  }
+  
+  /* Heart Animation Keyframes */
+  @keyframes untoldcoding {
+    0% {
+      transform: rotate(-45deg) scale(1.05);
+    }
+    70% {
+      transform: rotate(-45deg) scale(1);
+    }
+    100% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+  }
+  .btn{
+ margin-left: 80px;
+    background-color:palevioletred;
+    display: flex;
+    border-radius: 20px;
+  }
